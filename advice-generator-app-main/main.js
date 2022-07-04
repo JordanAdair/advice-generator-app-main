@@ -1,7 +1,6 @@
 const button = document.getElementById("button");
 const adviceNumber = document.getElementById("advice-number");
 const adviceQuote = document.getElementById("advice-quote-block");
-const url = "https://api.adviceslip.com/advice";
 
 // GET Random Advice from https://api.adviceslip.com
 function getRandomAdvice() {
