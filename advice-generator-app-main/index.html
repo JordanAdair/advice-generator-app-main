@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Advice generator app</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<link rel="stylesheet" href="./styles.css" />
 
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<title>Frontend Mentor | Advice generator app</title>
+	</head>
+	<body>
+		<main>
+			<div class="main-content">
+				<h1 class="advice-number" id="advice-number"></h1>
+				<p class="advice-quote-block" id="advice-quote-block"></p>
+				<img
+					src="./images/pattern-divider-mobile.svg"
+					alt="Divider"
+					class="divider-mobile divider"
+				/>
+				<img
+					src="./images/pattern-divider-desktop.svg"
+					alt="Divider"
+					class="divider-desktop divider"
+				/>
+				<div class="button-container" id="button">
+					<img
+						src="./images/icon-dice.svg"
+						alt="dice icon"
+						class="dice-button"
+					/>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="https://github.com/JordanAdair/">Jordan Adair</a>.
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="./main.js"></script>
+	</body>
 </html>

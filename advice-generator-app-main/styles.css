@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&display=swap");
+
+:root {
+	/* Color presets */
+	--primary-light-cyan: hsl(193, 38%, 86%);
+	--primary-neon-green: hsl(150, 100%, 66%);
+	--neutral-grayish-blue: hsl(217, 19%, 38%);
+	--neutral-dark-grayish-blue: hsl(217, 19%, 24%);
+	--neutral-dark-blue: hsl(218, 23%, 16%);
+
+	/* Typography presets */
+	--heading: 12px;
+	--body-copy: 28px;
+
+	/* Layout presets */
+	--mobile-layout: 375px;
+	--desktop-layout: 1440px;
+}
+
+/* Global styles & margin reset */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Manrope", sans-serif;
+	font-weight: 800;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: var(--neutral-dark-blue);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 30px;
+	color: white;
+}
+
+.attribution a {
+	color: var(--primary-neon-green);
+}
+
+.main-content {
+	width: min(90vw, 500px);
+	margin-inline: auto;
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	background-color: var(--neutral-dark-grayish-blue);
+	border-radius: 15px;
+}
+
+.advice-number {
+	margin-top: 30px;
+	color: var(--primary-neon-green);
+	font-size: var(--heading);
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: 700;
+}
+
+.advice-quote-block {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 10px 35px 10px 35px;
+	font-size: var(--body-copy);
+	color: var(--primary-light-cyan);
+}
+
+.divider {
+	display: none;
+}
+
+.dice-button {
+	display: flex;
+	flex-direction: column;
+	top: 1px;
+	position: relative;
+	z-index: 99;
+}
+
+.button-container {
+	transition: all 0.25s ease-in-out;
+	padding: 20px;
+	border-radius: 50%;
+	background-color: var(--primary-neon-green);
+	position: relative;
+	top: 30px;
+	z-index: 99;
+	cursor: pointer;
+}
+
+.button-container:hover {
+	filter: drop-shadow(5px 5px 15px hsl(150, 100%, 66%));
+}
+
+/* Media queries (doesn't let me use var for some reason) */
+
+/* Mobile */
+@media (min-width: 375px) {
+	.divider-mobile {
+		display: block;
+	}
+
+	.divider-desktop {
+		display: none;
+	}
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+	.divider-mobile {
+		display: none;
+	}
+
+	.divider-desktop {
+		display: block;
+	}
+}
