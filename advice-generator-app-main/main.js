@@ -4,7 +4,7 @@ const adviceQuote = document.getElementById("advice-quote-block");
 
 // GET Random Advice from https://api.adviceslip.com
 function getRandomAdvice() {
-	const randomNum = Math.floor(Math.random() * 100) + 1;
+	const randomNum = Math.floor(Math.random() * 224) + 1;
 
 	axios({
 		method: "get",
